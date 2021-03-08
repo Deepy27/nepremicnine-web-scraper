@@ -12,7 +12,7 @@ class Parser:
         lines = file.readlines()
         file.close()
         for line in lines:
-            url = line.replace('\n', '')
+            url = line.strip('\n')
             if url:
                 self.ads.append(url)
 
